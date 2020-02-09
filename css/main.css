@@ -1,0 +1,26 @@
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+
+}
+
+/*.left-menu {*/
+/*  list-style: none;*/
+/*  display: flex;*/
+/*}*/
+
+nav {
+  height: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+nav a {
+  padding: 15px;
+}
