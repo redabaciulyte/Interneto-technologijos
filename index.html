@@ -2,6 +2,7 @@
 <html class="no-js" lang="">
 
 <head>
+
   <meta charset="utf-8">
   <title></title>
   <meta name="description" content="">
@@ -10,35 +11,73 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+          integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+          integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+          crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <nav>
-	  <img src="img/VIZZY_logo.png">
-      <a href="#" class="current">HOME</a>
-      <a href="#">PRODUCTS</a>
-      <a href="#">TEMPLATES</a>
-      <a href="#">PRICING</a>
-    <button class="snow">SIGN UP</button>
-    <button class="snow1">SIGN IN</button>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="img/VIZZY_logo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PRODUCTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TEMPLATES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PRICING</a>
+          </li>
+        </ul>
+        <div class="nav navbar-nav">
+          <button class="btn btn-link">SIGN IN</button>
+          <button class="btn btn-light">SIGN UP</button>
+        </div>
+      </div>
+    </div>
   </nav>
-  <header>
-    <h1 style="width: 30%">Create Stunning Visual Media</h1>
-    <p style="width: 30%">
-      Super simple tool to create trendy videos and pictures for your ads, social media, blogs and websites.</p>
-		<p>Make your project stand out!</p>
-		<button class="orange">CREATE DESIGN 🡢</button>
-	</header>
-<div class="dota">
-			<p class="red"></p>
-			<p class="dots"></p>
-			<p class="dots"></p>
-			<p class="dots"></p>
-	  </div>
-
-	<footer>
-
-	</footer>
+  <header class="bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-7">
+          <h1>Create Stunning Visual Media</h1>
+          <p>
+            Super simple tool to create trendy videos and pictures for your ads, social media, blogs and websites.</p>
+          <p>Make your project stand out!</p>
+          <button class="btn btn-danger">CREATE DESIGN 🡢</button>
+        </div>
+        <div class="row">
+          <div class="dota">
+            <p class="red"></p>
+            <p class="dots"></p>
+            <p class="dots"></p>
+            <p class="dots"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 </body>
 
 </html>
