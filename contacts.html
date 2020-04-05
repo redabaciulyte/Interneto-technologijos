@@ -68,21 +68,6 @@
     </div>
   </nav>
 
-  <footer class="footer mt-auto py-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/">Bootstrap documentation</a>
-        </div>
-        <div class="col-md-6 text-right">
-          <a href="https://instagram.com" class="mr-3"><i class="fa fa-instagram"></i> Instagram</a>
-          <a href="https://facebook.com" class="mr-3"><i class="fa fa-facebook"></i> Facebook</a>
-          <a href="https://linkedin.com" class="mr-3"><i class="fa fa-linkedin"></i> Linkedin</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
   <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -189,7 +174,7 @@
           <td><input class="calc" type="button" value="+" onclick="insert('+')"></td>
         </tr>
         <tr>
-         
+
           <td><input class="calc" type="button" value="0" onclick="insert(0)"></td>
           <td><input class="calc" type="button" value="." onclick="insert('.')"></td>
           <td><input class="calc" type="button" value="=" onclick="equal()"></td>
@@ -197,6 +182,20 @@
         </tr>
     </table>
   </div>
+  <footer class="footer mt-auto py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/">Bootstrap documentation</a>
+        </div>
+        <div class="col-md-6 text-right">
+          <a href="https://instagram.com" class="mr-3"><i class="fa fa-instagram"></i> Instagram</a>
+          <a href="https://facebook.com" class="mr-3"><i class="fa fa-facebook"></i> Facebook</a>
+          <a href="https://linkedin.com" class="mr-3"><i class="fa fa-linkedin"></i> Linkedin</a>
+        </div>
+      </div>
+    </div>
+  </footer>
     <script>
     function insert(num){
   document.form.textview.value+=num;
@@ -207,17 +206,17 @@
       document.form.textview.value = eval(temp);
     }
   }
- 
+
   function back(){
     var temp = document.form.textview.value;
     document.form.textview.value = temp.substring(0,temp.length-1);
   }
- 
+
   function delet(){
     document.form.textview.value='';
   }
 </script>
- 
+
 </body>
 
 </html>

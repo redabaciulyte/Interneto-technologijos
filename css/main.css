@@ -46,7 +46,7 @@ body {
     border:0;
     font-size:30px;
 }
- 
+
 .calc1{
     width:152px;
 }
@@ -144,4 +144,14 @@ p {
 .carousel-indicators {
   bottom: 15% !important;
   justify-content: left !important;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
