@@ -151,24 +151,27 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-		<div class="modal-body" id "Sign in">
-			<form class="form-container">
-				<h1>Sign In</h1>
-	
-				<label for="email"><b>Email</b></label>
-				<input type="text" placeholder="Enter email" name="email" required>
-		
-				<label for="psw"><b>Password</b></label>
-				<input type="password" placeholder="Enter password" name="psw" required>
-				
-			</form>
-		</div>
-		>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+        <form>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" required>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -182,26 +185,37 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-	<div class="modal-body" id "Sign up">
-		<form class="form-container">
-				<h1>Sign Up</h1>
-		
-				<label for="email"><b>Email</b></label>
-				<input type="text" placeholder="Enter email" name="email" required>
-		
-				<label for="psw"><b>Password</b></label>
-				<input type="password" placeholder="Enter password" name="psw" required>
-		
-				<label for="psw"><b>Repeat Password</b></label>
-				<input type="password" placeholder="Repeat password" name="psw" required>
-		
-		</form>
-	</div>
-       </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+        <form id="profileForm">
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="InputEmail1">Email address</label>
+              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" required>
+            </div>
+            <div class="form-group">
+              <label for="InputName">Name</label>
+              <input type="text" class="form-control" id="InputName" aria-describedby="emailHelp" required>
+            </div>
+            <div class="form-group">
+              <label for="InputSurname">Surname</label>
+              <input type="text" class="form-control" id="InputSurname" aria-describedby="emailHelp" required>
+            </div>
+            <div class="form-group date" data-provide="datepicker">
+              <label for="InputDate">Date</label>
+              <input type="text" class="form-control" id="InputDate" required>
+              <div class="input-group-addon">
+                <span class="glyphicon glyphicon-th"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="InputPassword1">Password</label>
+              <input type="password" class="form-control" id="InputPassword1" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
