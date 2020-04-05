@@ -30,7 +30,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha256-bqVeqGdJ7h/lYPq6xrPv/YGzMEb6dNxlfiTUHSgRCp8=" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body background="./img/header.png">
   <nav class="navbar navbar-expand-lg navbar-dark position-fixed">
     <div class="container">
       <a class="navbar-brand" href="index.html"><img src="img/VIZZY_logo.png"></a>
@@ -67,84 +67,6 @@
       </div>
     </div>
   </nav>
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="false">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="dots active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1" class="dots"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2" class="dots"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="3" class="dots"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item min-vh-100 bg active" style="background-image: url('./img/header.png')">
-<!--        <img src="./img/header.png" class="d-block w-100 h-100" alt="...">-->
-        <div class="carousel-caption d-none d-md-block">
-          <div class="row">
-            <div class="col-md-10 col-lg-7">
-              <h1>Create Stunning Visual Media</h1>
-              <p>
-                Super simple tool to create trendy videos and pictures for your ads, social media, blogs and websites.
-              </p>
-              <p>Make your project stand out!</p>
-              <p><button class="btn btn-danger">CREATE DESIGN 🡢</button></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item min-vh-100 bg" style="background-image: url('./img/img2.jpg')">
-<!--        <img src="./img/header.png" class="d-block w-100 h-100" alt="...">-->
-        <div class="carousel-caption d-none d-md-block">
-          <div class="row">
-            <div class="col-md-10 col-lg-7">
-              <h1>Create Stunning Visual Media</h1>
-              <p>
-                Super simple tool to create trendy videos and pictures for your ads, social media, blogs and websites.
-              </p>
-              <p>Make your project stand out!</p>
-              <p><button class="btn btn-danger">CREATE DESIGN 🡢</button></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item min-vh-100 bg" style="background-image: url('./img/img3.jpg')">
-<!--        <img src="./img/header.png" class="d-block w-100 h-100" alt="...">-->
-        <div class="carousel-caption d-none d-md-block">
-          <div class="row">
-            <div class="col-md-10 col-lg-7">
-              <h1>Create Stunning Visual Media</h1>
-              <p>
-                Super simple tool to create trendy videos and pictures for your ads, social media, blogs and websites.
-              </p>
-              <p>Make your project stand out!</p>
-              <p><button class="btn btn-danger">CREATE DESIGN 🡢</button></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item min-vh-100 bg" style="background-image: url('./img/img4.jpg')">
-        <!--        <img src="./img/header.png" class="d-block w-100 h-100" alt="...">-->
-        <div class="carousel-caption d-none d-md-block">
-          <div class="row">
-            <div class="col-md-10 col-lg-7">
-              <h1>Create Stunning Visual Media</h1>
-              <p>
-                Super simple tool to create trendy videos and pictures for your ads, social media, blogs and websites.
-              </p>
-              <p>Make your project stand out!</p>
-              <p><button class="btn btn-danger">CREATE DESIGN 🡢</button></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
 
   <footer class="footer mt-auto py-3">
     <div class="container">
@@ -238,6 +160,64 @@
       </div>
     </div>
   </div>
+  <div class="container fixing">
+
+    <form name="form">
+        <input class="textview" name="textview" disabled="true">
+    </form>
+    <table>
+        <tr>
+          <td colspan="2"><input class="calc calc1" type="button" value="Del" onclick="back()"></td>
+          <td colspan="2"><input class="calc calc1" type="button" value="C" onclick="delet()"></td>
+        </tr>
+        <tr>
+          <td><input class="calc" type="button" value="7" onclick="insert(7)"></td>
+          <td><input class="calc" type="button" value="8" onclick="insert(8)"></td>
+          <td><input class="calc" type="button" value="9" onclick="insert(9)"></td>
+          <td><input class="calc" type="button" value="*" onclick="insert('*')"></td>
+        </tr>
+        <tr>
+          <td><input class="calc" type="button" value="4" onclick="insert(4)"></td>
+          <td><input class="calc" type="button" value="5" onclick="insert(5)"></td>
+          <td><input class="calc" type="button" value="6" onclick="insert(6)"></td>
+          <td><input class="calc" type="button" value="-" onclick="insert('-')"></td>
+        </tr>
+        <tr>
+          <td><input class="calc" type="button" value="1" onclick="insert(1)"></td>
+          <td><input class="calc" type="button" value="2" onclick="insert(2)"></td>
+          <td><input class="calc" type="button" value="3" onclick="insert(3)"></td>
+          <td><input class="calc" type="button" value="+" onclick="insert('+')"></td>
+        </tr>
+        <tr>
+         
+          <td><input class="calc" type="button" value="0" onclick="insert(0)"></td>
+          <td><input class="calc" type="button" value="." onclick="insert('.')"></td>
+          <td><input class="calc" type="button" value="=" onclick="equal()"></td>
+          <td><input class="calc" type="button" value="/" onclick="insert('/')"></td>
+        </tr>
+    </table>
+  </div>
+    <script>
+    function insert(num){
+  document.form.textview.value+=num;
+}
+  function equal(){
+    var temp = document.form.textview.value;
+    if(temp){
+      document.form.textview.value = eval(temp);
+    }
+  }
+ 
+  function back(){
+    var temp = document.form.textview.value;
+    document.form.textview.value = temp.substring(0,temp.length-1);
+  }
+ 
+  function delet(){
+    document.form.textview.value='';
+  }
+</script>
+ 
 </body>
 
 </html>

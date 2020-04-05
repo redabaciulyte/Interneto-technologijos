@@ -15,15 +15,53 @@ body {
    background-size: cover;
  }
 
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
 .navbar {
   width: 100%;
   z-index: 2 !important;
+}
+
+.calc{
+    padding:0;
+    margin:0;
+    width:75px;
+    height:75px;
+    border:0;
+    background-color: lightpink;
+    cursor:pointer;
+}
+.textview{
+    width:306px;
+    height:50px;
+    margin:0;
+    padding:0;
+    margin-left: 1px;
+    border:0;
+    font-size:30px;
+}
+ 
+.calc1{
+    width:152px;
 }
 
 .navbar-nav a {
   margin-left: 40px;
   color: #ffffff;
   text-decoration:none;
+}
+.fixing{
+padding-top: 300px;
+}
+
+.fixing li:hover{
+	background-color: grey;
 }
 
 .navbar-nav a:hover{
