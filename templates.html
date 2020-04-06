@@ -41,27 +41,27 @@
       <div class="navbar-collapse collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a id="home" class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="products.html">PRODUCTS</a>
+            <a id="products" class="nav-link" href="products.html">PRODUCTS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="templates.html">TEMPLATES</a>
+            <a id="templates" class="nav-link" href="templates.html">TEMPLATES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pricing.html">PRICING</a>
+            <a id="pricing" class="nav-link" href="pricing.html">PRICING</a>
           </li>
-		  <li class="nav-item">
-            <a class="nav-link" href="contacts.html">CONTACTS</a>
+          <li class="nav-item">
+            <a id="contacts" class="nav-link" href="contacts.html">CONTACTS</a>
           </li>
-		  <li class="nav-item">
-            <a class="nav-link" href="gallery.html">GALLERY</a>
+          <li class="nav-item">
+            <a id="gallery" class="nav-link" href="gallery.html">GALLERY</a>
           </li>
         </ul>
         <div class="nav navbar-nav">
-          <button class="btn btn-link" data-toggle="modal" data-target="#signInModal">SIGN IN</button>
-          <button class="btn btn-light" data-toggle="modal" data-target="#signUpModal">SIGN UP</button>
+          <button id="signin" class="btn btn-link" data-toggle="modal" data-target="#signInModal">SIGN IN</button>
+          <button id="signup" class="btn btn-light" data-toggle="modal" data-target="#signUpModal">SIGN UP</button>
         </div>
       </div>
     </div>
@@ -70,7 +70,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="signInModalLabel">Sign in</h5>
+          <h5 id="signInModalLabel" class="modal-title" >Sign in</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -78,22 +78,22 @@
         <form>
           <div class="modal-body">
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
+              <label id="siginEmail"for="exampleInputEmail1">Email address</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" required>
+              <label id="siginPassword" for="exampleInputPassword1">Password</label>
+              <input  type="password" class="form-control" id="exampleInputPassword1" required>
             </div>
             <div class="form-group form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              <label id="checkme" class="form-check-label" for="exampleCheck1">I read and agree with rules of usage.</label>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button id="signinClose" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button id="signinSubmit" type="submit" class="btn btn-primary">Submit</button>
           </div>
         </form>
       </div>
@@ -104,7 +104,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="signUpModalLabel">Sign up</h5>
+          <h5  id="signUpModalLabel" class="modal-title">Sign up</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -112,32 +112,32 @@
         <form id="profileForm">
           <div class="modal-body">
             <div class="form-group">
-              <label for="InputEmail1">Email address</label>
+              <label id="signupEmail" for="InputEmail1">Email address</label>
               <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" required>
             </div>
             <div class="form-group">
-              <label for="InputName">Name</label>
+              <label id="signupName" for="InputName">Name</label>
               <input type="text" class="form-control" id="InputName" aria-describedby="emailHelp" required>
             </div>
             <div class="form-group">
-              <label for="InputSurname">Surname</label>
+              <label id="signupSurname" for="InputSurname">Surname</label>
               <input type="text" class="form-control" id="InputSurname" aria-describedby="emailHelp" required>
             </div>
             <div class="form-group date" data-provide="datepicker">
-              <label for="InputDate">Date</label>
+              <label id="date" for="InputDate">Birth date</label>
               <input type="text" class="form-control" id="InputDate" required>
               <div class="input-group-addon">
                 <span class="glyphicon glyphicon-th"></span>
               </div>
             </div>
             <div class="form-group">
-              <label for="InputPassword1">Password</label>
+              <label id="singupPassword" for="InputPassword1">Password</label>
               <input type="password" class="form-control" id="InputPassword1" required>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Save changes</button>
+            <button id="signupClose" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button id="signupSubmit" type="submit" class="btn btn-primary">Save changes</button>
           </div>
         </form>
       </div>
@@ -148,9 +148,9 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th id="firstN" scope="col">First</th>
+      <th id="lastN"scope="col">Last</th>
+      <th id="handleN" scope="col">Handle</th>
     </tr>
   </thead>
   <tbody>
@@ -179,7 +179,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/">Bootstrap documentation</a>
+        <a id="en" href="#">EN</a>
+        <a id="lt" href="#">LT</a>
       </div>
       <div class="col-md-6 text-right">
         <a href="https://instagram.com" class="mr-3"><i class="fa fa-instagram"></i> Instagram</a>
@@ -189,6 +190,8 @@
     </div>
   </div>
 </footer>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -154,4 +154,11 @@ footer {
   bottom: 0;
   position: fixed;
   width: 100%;
+  z-index: 9999;
+}
+
+.carousel-indicators {
+  margin: 0 !important;
+  right: inherit !important;
+  left: inherit !important;
 }
